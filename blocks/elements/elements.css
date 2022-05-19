@@ -1,0 +1,29 @@
+@import url('__items/elements__items.css');
+@import url('__item/elements__item.css');
+@import url('__photo/elements__photo.css');
+@import url('__description/elements__description.css');
+@import url('__title/elements__title.css');
+@import url('__like/elements__like.css');
+
+.elements {
+  max-width: 882px;
+  margin: 47px auto 0;
+  padding: 0;
+  display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+  .elements {
+    max-width: 700px;
+  }
+	
+}
+
+@media screen and (max-width: 767px) {
+  .elements {
+    max-width: 320px;
+    margin: 40px auto 0;
+  }
+}
+
+

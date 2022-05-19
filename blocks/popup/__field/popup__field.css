@@ -1,0 +1,27 @@
+@import url('_name/popup__field_name.css');
+@import url('_description/popup__field_description.css');
+
+.popup__field {
+  height: 57px;
+  border: none;
+  border-bottom: 1px solid #bcbcc4;
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: black;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.popup__field:focus {
+  outline-color: #bcbcc4;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__field{
+    height: 27px;
+  }
+  
+}

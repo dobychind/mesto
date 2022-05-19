@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+    .popup__field_description{
+        margin-top: 30px;
+    }
+}
