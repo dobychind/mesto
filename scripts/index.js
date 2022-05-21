@@ -9,10 +9,9 @@ const profileDescription = document.querySelector('.profile__description');
 
 const popupToggle = function() {
   popup.classList.toggle('popup_opened');
+  profileName = profileName.value;
+  profileDescription = profileDescription.value;
 }
-
-profileEditButton.addEventListener('click', popupToggle);
-popupExitButton.addEventListener('click', popupToggle);
 
 function formSubmitHandler (evt) {
   evt.preventDefault();
@@ -21,6 +20,6 @@ function formSubmitHandler (evt) {
   popupToggle();
 }
 
+profileEditButton.addEventListener('click', popupToggle);
+popupExitButton.addEventListener('click', popupToggle);
 formElement.addEventListener('submit', formSubmitHandler);
-
-

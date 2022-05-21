@@ -9,7 +9,7 @@
 <body class="page">
 
   <header class="header">
-    <img class="logo" src="images/logo/logo.svg" alt="Логотип проекта">
+    <img class="header__logo" src="images/logo/logo.svg" alt="Логотип проекта">
   </header>
 
   <main class="content">
@@ -19,13 +19,13 @@
       <div class="profile__info">
         <div class="profile__title">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button class="profile__edit-button" type="button"></button>
+          <button class="profile__edit-button" aria-label="Edit" type="button"></button>
         </div>
         <p class="profile__description">
           Исследователь океана
         </p>
       </div>
-      <button class="profile__add-button" type="button"></button>
+      <button class="profile__add-button" aria-label="Add" type="button"></button>
     </section>
 
     <section class="elements">
@@ -39,7 +39,7 @@
               <h3 class="elements__title">
                 Комсомольск-на-Амуре
               </h3>
-              <button class="elements__like" type="button"></button>
+              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
           </div>
         </li>
 
@@ -51,7 +51,7 @@
               <h3 class="elements__title">
                 Челябинск
               </h3>
-              <button class="elements__like" type="button"></button>
+              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
           </div>
         </li>
 
@@ -63,7 +63,7 @@
               <h3 class="elements__title">
                 Воронеж
               </h3>
-              <button class="elements__like" type="button"></button>
+              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
           </div>
         </li>
 
@@ -75,7 +75,7 @@
               <h3 class="elements__title">
                 Краснодар
               </h3>
-              <button class="elements__like" type="button"></button>
+              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
           </div>
         </li>
 
@@ -87,7 +87,7 @@
               <h3 class="elements__title">
                 Тула
               </h3>
-              <button class="elements__like" type="button"></button>
+              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
           </div>
         </li>
 
@@ -99,7 +99,7 @@
               <h3 class="elements__title">
                 Финский залив
               </h3>
-              <button class="elements__like" type="button"></button>
+              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
           </div>
         </li>
 
@@ -114,13 +114,13 @@
   <div class="popup">
     <div class="popup__container">
       <h3 class="popup__title">Редактировать профиль</h3>
-      <form class="popup__form">
+      <form class="popup__form" name="Information">
         <input class="popup__field popup__field_name" 
         type="text" name="username" value="Жак-Ив Кусто">
         <input class="popup__field popup__field_description" 
         type="text" name="description" value="Исследователь океана">
-        <button class="popup__save-button" type="submit">Сохранить</button>
-        <button class="popup__exit-button" type="button"></button>
+        <button class="popup__save-button" aria-label="Save" type="submit">Сохранить</button>
+        <button class="popup__exit-button" aria-label="Exit" type="button"></button>
       </form>
     </div>
     
