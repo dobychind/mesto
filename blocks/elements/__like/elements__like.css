@@ -1,7 +1,8 @@
 .elements__like {
-  background-image: url(../../../images/elements/Like.svg);
+  background: url(../../../images/elements/Like.svg) white center no-repeat;
   width: 21px;
   height: 18px;
+  background-size: 100%;
   border: none;
   background-color: white;
   margin: 31px 20px auto auto;
@@ -10,9 +11,4 @@
 .elements__like:hover {
   opacity: 0.5;
   cursor: pointer;
-}
-
-.elements__like:focus {
-  background-image: url(../../../images/elements/Like_Black.png);
-  opacity: 1;
 }

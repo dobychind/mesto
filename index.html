@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Место</title>
   <link rel="stylesheet" href="pages/index.css">
 </head>
+
 <body class="page">
 
   <header class="header">
@@ -14,92 +16,78 @@
 
   <main class="content">
     <section class="profile">
-      <img src="images/profile/Profile_image.jpg" 
-      alt="Аватар" class="profile__avatar">
+      <img src="images/profile/Profile_image.jpg" alt="Аватар" class="profile__avatar">
       <div class="profile__info">
         <div class="profile__title">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
           <button class="profile__edit-button" aria-label="Edit" type="button"></button>
         </div>
-        <p class="profile__description">
-          Исследователь океана
-        </p>
+        <p class="profile__description">Исследователь океана</p>
       </div>
       <button class="profile__add-button" aria-label="Add" type="button"></button>
     </section>
 
     <section class="elements">
+
       <ul class="elements__items">
-
         <li class="elements__item">
-          <img class="elements__photo" 
-          src="images/elements/01_KnA.jpg"
-          alt="Комсомольск-на-Амуре">
+          <img class="elements__photo" src="images/elements/01_KnA.jpg" alt="Комсомольск-на-Амуре">
           <div class="elements__description">
-              <h3 class="elements__title">
-                Комсомольск-на-Амуре
-              </h3>
-              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
+            <h3 class="elements__title">
+              Комсомольск-на-Амуре
+            </h3>
+            <button class="elements__like" aria-label="Like" type="button"></button>
           </div>
         </li>
 
         <li class="elements__item">
-          <img class="elements__photo"
-          src="images/elements/02_Chelyabinsk.jpg"
-          alt="Челябинск">
+          <img class="elements__photo" src="images/elements/01_KnA.jpg" alt="Комсомольск-на-Амуре">
           <div class="elements__description">
-              <h3 class="elements__title">
-                Челябинск
-              </h3>
-              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
+            <h3 class="elements__title">
+              Комсомольск-на-Амуре
+            </h3>
+            <button class="elements__like" aria-label="Like" type="button"></button>
           </div>
         </li>
 
         <li class="elements__item">
-          <img class="elements__photo" 
-          src="images/elements/03_Voronezh.jpg"
-          alt="Воронеж интернешнл">
+          <img class="elements__photo" src="images/elements/03_Voronezh.jpg" alt="Воронеж интернешнл">
           <div class="elements__description">
-              <h3 class="elements__title">
-                Воронеж
-              </h3>
-              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
+            <h3 class="elements__title">
+              Воронеж
+            </h3>
+            <button class="elements__like" aria-label="Like" type="button"></button>
           </div>
         </li>
 
         <li class="elements__item">
-          <img class="elements__photo"
-          src="images/elements/04_Krasnodar.jpg"
-          alt="Открытый кинотеатр в парке Галицкого">
+          <img class="elements__photo" src="images/elements/04_Krasnodar.jpg"
+            alt="Открытый кинотеатр в парке Галицкого">
           <div class="elements__description">
-              <h3 class="elements__title">
-                Краснодар
-              </h3>
-              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
+            <h3 class="elements__title">
+              Краснодар
+            </h3>
+            <button class="elements__like" aria-label="Like" type="button"></button>
           </div>
         </li>
 
         <li class="elements__item">
-          <img class="elements__photo"
-          src="images/elements/05_Tula.jpg"
-          alt="Тульский Кремль зимой">
+          <img class="elements__photo" src="images/elements/05_Tula.jpg" alt="Тульский Кремль зимой">
           <div class="elements__description">
-              <h3 class="elements__title">
-                Тула
-              </h3>
-              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
+            <h3 class="elements__title">
+              Тула
+            </h3>
+            <button class="elements__like" aria-label="Like" type="button"></button>
           </div>
         </li>
 
         <li class="elements__item">
-          <img class="elements__photo"
-          src="images/elements/06_Finsky_zaliv.jpg"
-          alt="Валуны на берегу в белую ночь">
+          <img class="elements__photo" src="images/elements/06_Finsky_zaliv.jpg" alt="Валуны на берегу в белую ночь">
           <div class="elements__description">
-              <h3 class="elements__title">
-                Финский залив
-              </h3>
-              <button class="elements__like elements__like_active" aria-label="Like" type="button"></button>
+            <h3 class="elements__title">
+              Финский залив
+            </h3>
+            <button class="elements__like" aria-label="Like" type="button"></button>
           </div>
         </li>
 
@@ -115,18 +103,18 @@
     <div class="popup__container">
       <h3 class="popup__title">Редактировать профиль</h3>
       <form class="popup__form" name="Information">
-        <input class="popup__field popup__field_name" 
-        type="text" name="username" value="Жак-Ив Кусто">
-        <input class="popup__field popup__field_description" 
-        type="text" name="description" value="Исследователь океана">
+        <input class="popup__field popup__field_type_name" type="text" name="username" value="Жак-Ив Кусто">
+        <input class="popup__field popup__field_type_description" type="text" name="description"
+          value="Исследователь океана">
         <button class="popup__save-button" aria-label="Save" type="submit">Сохранить</button>
         <button class="popup__exit-button" aria-label="Exit" type="button"></button>
       </form>
     </div>
-    
+
   </div>
 
   <script src="scripts/index.js"></script>
 
 </body>
+
 </html>
