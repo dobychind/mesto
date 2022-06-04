@@ -81,7 +81,7 @@ function renderCard(cardItem, isPrepend = false) {
 }
 
 function makeCard(cardItem) {
-  const cardTemplate = document.querySelector('#grid_card').content;
+  const cardTemplate = document.querySelector('#grid-card').content;
   const cardLink = cardItem.link;
   const cardName = cardItem.name;
   const newCard = cardTemplate.querySelector('.element').cloneNode(true);
