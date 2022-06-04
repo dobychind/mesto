@@ -1,20 +1,10 @@
 .elements {
-  max-width: 882px;
-  margin: 47px auto 0;
-  padding: 0;
-  display: flex;
+  width: 100%;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width:887px) {
   .elements {
-    max-width: 700px;
+    width: calc(100% - 38px);
   }
-	
 }
 
-@media screen and (max-width: 767px) {
-  .elements {
-    max-width: 320px;
-    margin: 40px auto 0;
-  }
-}
