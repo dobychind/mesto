@@ -10,6 +10,8 @@ const photoZoomedTitle = popupShowPhoto.querySelector('.popup__picture-title');
 const nameCurrent = document.querySelector('.profile__title');
 const jobCurrent = document.querySelector('.profile__job');
 const cardsGrid = document.querySelector('.elements__grid');
+const cardTemplate = document.querySelector('#grid_card').content;
+
 
 //Элементы форм
 const formEditProfile = document.forms.editForm;
@@ -96,7 +98,7 @@ function closePopup(popup) {
 }
 
 function openPopup(popup) {
-  //document.addEventListener('keydown', pressEscapeHandler);
+  document.addEventListener('keydown', pressEscapeHandler);
   popup.classList.add('popup_opened');
 }
 
@@ -120,7 +122,6 @@ function renderCard(cardItem, isPrepend = false) {
 }
 
 function makeCard(cardItem) {
-  const cardTemplate = document.querySelector('#grid_card').content;
   const cardLink = cardItem?.link ?? '#';
   const cardName = cardItem?.name ?? 'Картинка без названия';
   const newCard = cardTemplate.querySelector('.element').cloneNode(true);
